@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--dark-grey-color);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 30px 50px 50px 360px;
+  }
+  &__title {
+    @include font(30px, 400, 35px);
+  }
+  &__contacts {
+    @include font(30px, 400, 35px);
+    display: flex;
+    font-style: normal;
+    & span {
+      display: block;
+    }
+  }
+}
+.contacts {
+  &__key {
+    margin-right: 20px;
+    text-align: end;
+    & span:last-child {
+      margin-top: 50px;
+    }
+  }
+  &__value span:last-child {
+    margin-top: 15px;
+  }
+}

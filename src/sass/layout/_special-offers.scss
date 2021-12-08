@@ -1,0 +1,36 @@
+.special-offers {
+  border: 2px solid var(--white-color);
+  background-color: var(--grey-color);
+  .container {
+    padding: 15px 0 60px 350px;
+  }
+  &__title {
+    @include font(70px, 400, 82px);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    width: 1100px;
+  }
+  &__elem {
+    @include font(20px, 400, 24px);
+    @include shadow(0, 30px);
+    width: 350px;
+    padding: 10px 10px 30px;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__img {
+    width: 100%;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+  }
+  &__name {
+    @include font(30px, 400, 35px);
+    text-align: center;
+  }
+}

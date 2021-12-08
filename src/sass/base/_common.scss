@@ -1,0 +1,23 @@
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--white-color);
+}
+body {
+  background-color: var(--black-color);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--white-color);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}

@@ -1,0 +1,61 @@
+.hero {
+  .container {
+    position: relative;
+    height: 1045px;
+    margin: 0 auto;
+  }
+  &__box1 {
+    @include shadow(-30px, 30px);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 580px;
+    height: 300px;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    background-image: url('../images/main/hero1.png');
+    background-size: cover;
+    z-index: 1;
+  }
+  &__box2 {
+    position: absolute;
+    top: 200px;
+    right: 225px;
+    width: 790px;
+    height: 600px;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    background-image: url('../images/main/hero2.png');
+    background-size: cover;
+    padding: 35px 25px;
+  }
+  &__box3 {
+    @include shadow(-30px, 30px);
+    position: absolute;
+    top: 600px;
+    right: 25px;
+    width: 475px;
+    height: 300px;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    background-image: url('../images/main/hero3.png');
+    background-size: cover;
+  }
+  &__title {
+    @include font(70px, 400, 82px);
+    width: 480px;
+  }
+  &__link {
+    @include font(30px, 400, 35px);
+    @include shadow(-30px, 30px);
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+    padding: 15px 50px;
+    border: 2px solid var(--white-color);
+    border-radius: 30px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    cursor: pointer;
+  }
+}
