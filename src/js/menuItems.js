@@ -1,7 +1,7 @@
 export default [
   {
     type: 'vok',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -9,7 +9,7 @@ export default [
   },
   {
     type: 'vok',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -17,7 +17,7 @@ export default [
   },
   {
     type: 'vok',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -25,7 +25,7 @@ export default [
   },
   {
     type: 'vok',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -33,7 +33,7 @@ export default [
   },
   {
     type: 'vok',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -41,7 +41,7 @@ export default [
   },
   {
     type: 'premium',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -49,7 +49,7 @@ export default [
   },
   {
     type: 'premium',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -57,7 +57,7 @@ export default [
   },
   {
     type: 'premium',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -65,7 +65,7 @@ export default [
   },
   {
     type: 'premium',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -73,7 +73,7 @@ export default [
   },
   {
     type: 'soup',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -81,7 +81,7 @@ export default [
   },
   {
     type: 'soup',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -89,7 +89,7 @@ export default [
   },
   {
     type: 'soup',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -97,7 +97,7 @@ export default [
   },
   {
     type: 'salad',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
@@ -105,7 +105,7 @@ export default [
   },
   {
     type: 'salad',
-    img: './images/main/special-offers1.png',
+    img: '/rice-restaurant/special-offers1.5a5b298e.png',
     itemName: 'Pho',
     price: '120$',
     description:
