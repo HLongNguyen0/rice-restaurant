@@ -2,42 +2,42 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 290px;
+  width: 280px;
   height: 100%;
-  padding: 0 35px;
+  padding: 0 24px;
   border-left: 2px solid var(--white-color);
   border-right: 2px solid var(--white-color);
   background-color: var(--red-color);
   text-align: center;
   &__container {
     height: 100%;
-    padding: 50px 0;
+    padding: 64px 0;
     border-left: 2px solid var(--white-color);
     border-right: 2px solid var(--white-color);
   }
   &__nav {
-    margin-bottom: 300px;
+    margin-bottom: 320px;
   }
   &__tel {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
 }
 #logo {
-  @include font(70px, 700, 82px);
+  @include font(64px, 700, 72px);
   display: block;
   margin-bottom: 100px;
 }
 .nav {
   &__elem {
-    @include font(30px, 400, 35px);
+    @include font(24px, 400, 32px);
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 }
 .tel__elem {
-  @include font(30px, 400, 35px);
+  @include font(24px, 400, 32px);
 }
 .time__elem {
-  @include font(20px, 400, 24px);
+  @include font(16px, 400, 24px);
 }

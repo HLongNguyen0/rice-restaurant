@@ -1,17 +1,18 @@
 .footer {
+  border: 2px solid var(--white-color);
   background-color: var(--dark-grey-color);
   &__container {
     display: flex;
     justify-content: space-between;
     width: 1440px;
     margin: 0 auto;
-    padding: 30px 50px 50px 360px;
+    padding: 32px 48px 48px 320px;
   }
   &__title {
-    @include font(30px, 400, 35px);
+    @include font(24px, 400, 32px);
   }
   &__contacts {
-    @include font(30px, 400, 35px);
+    @include font(24px, 400, 32px);
     display: flex;
     font-style: normal;
     & span {
@@ -21,13 +22,13 @@
 }
 .contacts {
   &__key {
-    margin-right: 20px;
+    margin-right: 16px;
     text-align: end;
     & span:last-child {
-      margin-top: 50px;
+      margin-top: 48px;
     }
   }
   &__value span:last-child {
-    margin-top: 15px;
+    margin-top: 16px;
   }
 }

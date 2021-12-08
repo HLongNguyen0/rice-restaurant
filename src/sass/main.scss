@@ -1,17 +1,20 @@
 // ultils
 @import './utils/_variables';
 @import './utils/mixin';
+@import './utils/visually-hidden';
 
 // base
 @import './base/common';
 
 // components
 @import './components/container';
-@import './components/decor';
+@import './components/img-box';
 
 // layout
 @import './layout/header';
 @import './layout/hero';
 @import './layout/special-offers';
 @import './layout/about-us';
+@import './layout/hero2';
+@import './layout/menu';
 @import './layout/footer';

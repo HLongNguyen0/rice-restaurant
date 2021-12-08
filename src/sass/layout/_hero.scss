@@ -1,59 +1,56 @@
 .hero {
   .container {
     position: relative;
-    height: 1045px;
-    margin: 0 auto;
+    height: 880px;
   }
   &__box1 {
-    @include shadow(-30px, 30px);
+    @include shadow(-32px, 32px);
     position: absolute;
-    top: 15px;
-    right: 25px;
-    width: 580px;
-    height: 300px;
-    border: 2px solid var(--white-color);
-    border-radius: 20px;
+    top: 24px;
+    right: 40px;
+    width: 464px;
+    height: 280px;
     background-image: url('../images/main/hero1.png');
-    background-size: cover;
     z-index: 1;
   }
   &__box2 {
     position: absolute;
-    top: 200px;
-    right: 225px;
-    width: 790px;
-    height: 600px;
-    border: 2px solid var(--white-color);
-    border-radius: 20px;
+    top: 160px;
+    right: 300px;
+    width: 720px;
+    height: 480px;
     background-image: url('../images/main/hero2.png');
-    background-size: cover;
-    padding: 35px 25px;
+    padding: 35px 0 0 25px;
   }
   &__box3 {
-    @include shadow(-30px, 30px);
+    @include shadow(-32px, 32px);
     position: absolute;
-    top: 600px;
-    right: 25px;
-    width: 475px;
-    height: 300px;
-    border: 2px solid var(--white-color);
-    border-radius: 20px;
+    top: 520px;
+    right: 160px;
+    width: 440px;
+    height: 280px;
     background-image: url('../images/main/hero3.png');
-    background-size: cover;
   }
   &__title {
-    @include font(70px, 400, 82px);
+    @include font(64px, 400, 72px);
     width: 480px;
+    & span {
+      display: block;
+      font-weight: 700;
+      text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff,
+        -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      color: var(--red-color);
+    }
   }
   &__link {
-    @include font(30px, 400, 35px);
+    @include font(24px, 400, 32px);
     @include shadow(-30px, 30px);
     display: block;
     width: fit-content;
     margin-top: 40px;
-    padding: 15px 50px;
+    padding: 16px 48px;
     border: 2px solid var(--white-color);
-    border-radius: 30px;
+    border-radius: 32px;
     background-color: var(--red-color);
     color: var(--white-color);
     cursor: pointer;

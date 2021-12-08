@@ -16,14 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- header -->
     <include src="./partials/header.html"></include>
-
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/special-offers.html"></include>
-    <include src="./partials/about-us.html"></include>
-
+    <!-- main -->
+    <div class="main-page visually-hidden">
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/special-offers.html"></include>
+      <include src="./partials/about-us.html"></include>
+    </div>
+    <!-- menu -->
+    <div class="menu-page visually-hidden">
+      <include src="./partials/hero2.html"></include>
+      <include src="./partials/menu.html"></include>
+    </div>
+    <!-- contacts -->
+    <div class="contacts-page">aaa</div>
+    <!-- footer -->
     <include src="./partials/footer.html"></include>
 
+    <!-- script -->
     <script src="./index.js"></script>
   </body>
 </html>

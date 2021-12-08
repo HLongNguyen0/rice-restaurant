@@ -1,0 +1,36 @@
+.menu-nav {
+  border: 2px solid var(--white-color);
+  background-color: var(--grey-color);
+  .container {
+    padding: 40px 40px 40px 320px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__elem {
+    @include shadow(0, 16px);
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    padding: 10px 20px;
+    background-color: var(--red-color);
+    &--decor {
+      border-color: var(--red-color);
+      background-color: var(--white-color);
+      color: var(--red-color);
+    }
+  }
+}
+.menu-list {
+  background-color: var(--dark-grey-color);
+  .container {
+    padding: 60px 0 60px 300px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

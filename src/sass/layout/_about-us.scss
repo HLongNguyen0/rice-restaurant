@@ -4,40 +4,36 @@
     height: 995px;
   }
   &__img {
-    @include shadow(15px, 30px);
+    @include shadow(16px, 32px);
     position: absolute;
-    top: 130px;
-    right: 630px;
-    width: 482px;
+    top: 120px;
+    right: 640px;
+    width: 480px;
     height: 600px;
-    border: 2px solid var(--white-color);
-    border-radius: 20px;
+    background-image: url('../images/main/about-us.png');
     z-index: 1;
   }
   &__box {
     position: absolute;
-    top: 255px;
-    right: 25px;
-    width: 679px;
-    height: 600px;
-    padding: 20px 20px 50px 20px;
-    border: 2px solid var(--white-color);
-    border-radius: 20px;
+    top: 240px;
+    right: 32px;
+    width: 680px;
+    padding: 40px 24px;
     background-color: var(--grey-color);
   }
   &__title {
-    @include font(70px, 400, 82px);
+    @include font(64px, 400, 72px);
     text-align: center;
   }
   & p {
-    @include font(20px, 400, 24px);
-    margin: 10px 0 0 80px;
+    @include font(16px, 400, 24px);
+    margin: 16px 0 0 80px;
   }
   &__link {
-    @include font(30px, 400, 35px);
+    @include font(24px, 400, 32px);
     width: fit-content;
-    margin: 65px 0 0 250px;
-    padding: 15px 50px;
+    margin: 64px 0 0 280px;
+    padding: 16px 48px;
     border: 2px solid var(--white-color);
     border-radius: 30px;
     text-align: center;
