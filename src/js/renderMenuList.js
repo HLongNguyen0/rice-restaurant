@@ -1,13 +1,15 @@
-export default function menuString(menuItems, typeRequest) {
+import { menuItems } from './menuItems';
+
+export default function menuString(typeRequest) {
   return menuItems
     .map(item => {
       if (item.type === typeRequest) {
         return `
                 <li class="card__elem borders">
-                  <div class="card__img borders"></div>
+                  <img class="card__img borders" src="${item.img}" alt="food">
                   <div class="card__info">
-                    <h3 class="card__name">Pho</h3>
-                    <p class="card__price">Price: 120$</p>
+                    <h3 class="card__name">${item.name}</h3>
+                    <p class="card__price">Price: ${item.price}</p>
                   </div>
                 </li>`;
       }

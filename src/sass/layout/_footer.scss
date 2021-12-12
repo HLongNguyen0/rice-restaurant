@@ -75,6 +75,9 @@
       text-align: right;
       & span:last-child {
         margin-top: 24px;
+        @include min-width('large') {
+          margin-top: 32px;
+        }
       }
     }
   }

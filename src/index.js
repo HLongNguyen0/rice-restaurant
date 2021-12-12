@@ -1,5 +1,4 @@
 import './sass/main.scss';
-import menuItems from './js/menuItems';
 import menuString from './js/renderMenuList';
 
 const refs = {
@@ -10,6 +9,7 @@ const refs = {
   menu: document.querySelector('.menu'),
   contacts: document.querySelector('.contacts'),
   heroLink: document.querySelector('.hero__link'),
+  aboutUsLink: document.querySelector('.about-us__link'),
   menuList: document.querySelector('.menu-list__list'),
   vok: document.querySelector('.vok'),
   premium: document.querySelector('.premium'),
@@ -18,6 +18,7 @@ const refs = {
   header: document.querySelector('.header'),
   heroOpen: document.querySelector('.hero__open'),
   hero2Open: document.querySelector('.hero2__open'),
+  hero3Open: document.querySelector('.hero3__open'),
   headerClose: document.querySelector('.header__close'),
 };
 
@@ -25,6 +26,8 @@ const refs = {
 refs.main.addEventListener('click', onMain);
 refs.menu.addEventListener('click', onMenu);
 refs.heroLink.addEventListener('click', onMenu);
+refs.contacts.addEventListener('click', onContacts);
+refs.aboutUsLink.addEventListener('click', onContacts);
 
 function onMenu(e) {
   onNav(e);
@@ -33,6 +36,10 @@ function onMenu(e) {
 function onMain(e) {
   onNav(e);
   refs.mainPage.classList.remove('visually-hidden');
+}
+function onContacts(e) {
+  onNav(e);
+  refs.contactsPage.classList.remove('visually-hidden');
 }
 
 function onNav(e) {
@@ -44,7 +51,7 @@ function onNav(e) {
   e.target.removeEventListener('click', onMenu);
 }
 
-refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'vok'));
+refs.menuList.insertAdjacentHTML('beforeend', menuString('vok'));
 
 // menu
 refs.vok.addEventListener('click', onVok);
@@ -78,6 +85,7 @@ function onFood(e) {
 refs.headerClose.addEventListener('click', toggle);
 refs.heroOpen.addEventListener('click', toggle);
 refs.hero2Open.addEventListener('click', toggle);
+refs.hero3Open.addEventListener('click', toggle);
 
 function toggle(e) {
   e.preventDefault();

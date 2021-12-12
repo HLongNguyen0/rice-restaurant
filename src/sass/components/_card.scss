@@ -6,7 +6,7 @@
   }
   &__elem {
     width: 280px;
-    padding: 16px;
+    padding: 8px;
     margin-bottom: 16px;
     @include min-width('large') {
       margin: 16px 8px;
@@ -14,6 +14,8 @@
     }
   }
   &__img {
+    display: block;
+    width: 100%;
     height: 160px;
     margin: 0 auto 8px;
     @include min-width('large') {

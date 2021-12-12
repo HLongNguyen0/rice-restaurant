@@ -1,114 +1,32 @@
-export default [
+import boNe from '../images/food/bo-ne.jpg';
+
+export const menuItems = [
   {
     type: 'vok',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'vok',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'vok',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'vok',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'vok',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
+    img: `${boNe}`,
+    name: 'Bo ne',
+    price: '130$',
+    description: '',
   },
   {
     type: 'premium',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
+    img: ``,
+    name: 'Pho',
     price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'premium',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'premium',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'premium',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
+    description: '',
   },
   {
     type: 'soup',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
+    img: ``,
+    name: 'Pho',
     price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'soup',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'soup',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
+    description: '',
   },
   {
     type: 'salad',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
+    img: '',
+    name: 'Pho',
     price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
-  },
-  {
-    type: 'salad',
-    img: '/rice-restaurant/special-offers1.5a5b298e.png',
-    itemName: 'Pho',
-    price: '120$',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ea ipsa accusantium magnam quasi quo?',
+    description: '',
   },
 ];

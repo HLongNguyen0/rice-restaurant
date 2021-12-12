@@ -1,0 +1,11 @@
+.location {
+  .container {
+    @include max-width('large') {
+      padding: 0;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
