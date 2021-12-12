@@ -3,11 +3,12 @@ export default function menuString(menuItems, typeRequest) {
     .map(item => {
       if (item.type === typeRequest) {
         return `
-                <li class="special-offers__elem">
-                    <img src="${item.img}" alt="pho-bowl" class="special-offers__img" />
-                    <h3 class="special-offers__name">${item.itemName}</h3>
-                    <p class="special-offers__price">Price: ${item.price}</p>
-                    <p class="special-offers__description">${item.description}</p>
+                <li class="card__elem borders">
+                  <div class="card__img borders"></div>
+                  <div class="card__info">
+                    <h3 class="card__name">Pho</h3>
+                    <p class="card__price">Price: 120$</p>
+                  </div>
                 </li>`;
       }
     })

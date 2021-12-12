@@ -17,6 +17,7 @@ const refs = {
   salad: document.querySelector('.salad'),
   header: document.querySelector('.header'),
   heroOpen: document.querySelector('.hero__open'),
+  hero2Open: document.querySelector('.hero2__open'),
   headerClose: document.querySelector('.header__close'),
 };
 
@@ -39,10 +40,11 @@ function onNav(e) {
   refs.mainPage.classList.add('visually-hidden');
   refs.menuPage.classList.add('visually-hidden');
   refs.contactsPage.classList.add('visually-hidden');
+  refs.header.classList.toggle('is-closed');
   e.target.removeEventListener('click', onMenu);
 }
 
-refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'premium'));
+refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'vok'));
 
 // menu
 refs.vok.addEventListener('click', onVok);
@@ -75,8 +77,10 @@ function onFood(e) {
 // header modal
 refs.headerClose.addEventListener('click', toggle);
 refs.heroOpen.addEventListener('click', toggle);
+refs.hero2Open.addEventListener('click', toggle);
 
 function toggle(e) {
   e.preventDefault();
   refs.header.classList.toggle('is-closed');
+  e.target.removeEventListener('click', toggle);
 }

@@ -1,32 +1,89 @@
+// .hero2 {
+//   .container {
+//     position: relative;
+//     height: 600px;
+//   }
+//   &__box1 {
+//     position: absolute;
+//     top: 200px;
+//     right: 840px;
+//     width: 240px;
+//     height: 320px;
+//     background-image: url('../images/menu/hero1.png');
+//     z-index: 1;
+//   }
+//   &__box2 {
+//     position: absolute;
+//     top: 100px;
+//     right: 360px;
+//     width: 560px;
+//     height: 320px;
+//     background-image: url('../images/menu/hero2.png');
+//   }
+//   &__box3 {
+//     position: absolute;
+//     top: 240px;
+//     right: 80px;
+//     width: 360px;
+//     height: 240px;
+//     background-image: url('../images/menu/hero3.png');
+//     z-index: 1;
+//   }
+// }
+
 .hero2 {
   .container {
     position: relative;
-    height: 600px;
+    height: 320px;
+    @include min-width('large') {
+      height: 600px;
+    }
   }
   &__box1 {
     position: absolute;
-    top: 200px;
-    right: 840px;
-    width: 240px;
-    height: 320px;
+    top: 100px;
+    right: 200px;
+    width: 140px;
+    height: 200px;
     background-image: url('../images/menu/hero1.png');
+    background-size: cover;
     z-index: 1;
+    @include min-width('large') {
+      top: 120px;
+      right: 640px;
+      width: 280px;
+      height: 400px;
+    }
   }
   &__box2 {
     position: absolute;
-    top: 100px;
-    right: 360px;
-    width: 560px;
-    height: 320px;
+    top: 16px;
+    right: 24px;
+    width: 240px;
+    height: 160px;
     background-image: url('../images/menu/hero2.png');
+    background-size: cover;
+    @include min-width('large') {
+      top: 40px;
+      right: 160px;
+      width: 540px;
+      height: 360px;
+    }
   }
   &__box3 {
-    position: absolute;
-    top: 240px;
-    right: 80px;
-    width: 360px;
-    height: 240px;
-    background-image: url('../images/menu/hero3.png');
-    z-index: 1;
+    @include max-width('large') {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    @include min-width('large') {
+      position: absolute;
+      top: 320px;
+      right: 24px;
+      width: 360px;
+      height: 200px;
+      background-image: url('../images/menu/hero3.png');
+      background-size: cover;
+    }
   }
 }
