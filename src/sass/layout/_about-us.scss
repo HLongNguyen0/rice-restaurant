@@ -1,42 +1,104 @@
+// .about-us {
+//   .container {
+//     position: relative;
+//     height: 995px;
+//   }
+//   &__img {
+//     @include shadow(16px, 32px);
+//     position: absolute;
+//     top: 120px;
+//     right: 640px;
+//     width: 480px;
+//     height: 600px;
+//     background-image: url('../images/main/about-us.png');
+//     z-index: 1;
+//   }
+//   &__box {
+//     position: absolute;
+//     top: 240px;
+//     right: 32px;
+//     width: 680px;
+//     padding: 40px 24px;
+//     background-color: var(--grey-color);
+//   }
+//   &__title {
+//     @include font(64px, 400, 72px);
+//     text-align: center;
+//   }
+//   & p {
+//     @include font(16px, 400, 24px);
+//     margin: 16px 0 0 80px;
+//   }
+//   &__link {
+//     @include font(24px, 400, 32px);
+//     width: fit-content;
+//     margin: 64px 0 0 280px;
+//     padding: 16px 48px;
+//     border: 2px solid var(--white-color);
+//     border-radius: 30px;
+//     text-align: center;
+//     background-color: var(--red-color);
+//   }
+// }
+
 .about-us {
   .container {
-    position: relative;
-    height: 995px;
+    @include min-width('large') {
+      position: relative;
+      height: 995px;
+    }
   }
   &__img {
-    @include shadow(16px, 32px);
-    position: absolute;
-    top: 120px;
-    right: 640px;
-    width: 480px;
-    height: 600px;
-    background-image: url('../images/main/about-us.png');
-    z-index: 1;
+    @include max-width('large') {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    @include min-width('large') {
+      position: absolute;
+      top: 40px;
+      right: 560px;
+      width: 360px;
+      height: 540px;
+      background-image: url('../images/main/about-us.png');
+      background-size: cover;
+      z-index: 1;
+    }
   }
   &__box {
-    position: absolute;
-    top: 240px;
-    right: 32px;
-    width: 680px;
-    padding: 40px 24px;
+    padding: 16px;
     background-color: var(--grey-color);
+    @include min-width('large') {
+      position: absolute;
+      top: 200px;
+      right: 24px;
+      width: 600px;
+      padding: 40px 24px;
+    }
+    p {
+      @include font(16px, 400, 24px);
+      @include min-width('large') {
+        @include font(24px, 400, 32px);
+        margin-left: 56px;
+      }
+    }
   }
   &__title {
-    @include font(64px, 400, 72px);
+    @include font(40px, 700, 48px);
+    margin-bottom: 16px;
     text-align: center;
-  }
-  & p {
-    @include font(16px, 400, 24px);
-    margin: 16px 0 0 80px;
   }
   &__link {
-    @include font(24px, 400, 32px);
+    @include font(16px, 700, 24px);
     width: fit-content;
-    margin: 64px 0 0 280px;
-    padding: 16px 48px;
-    border: 2px solid var(--white-color);
-    border-radius: 30px;
-    text-align: center;
+    margin-top: 24px;
+    margin-left: auto;
+    padding: 4px 12px;
     background-color: var(--red-color);
+    @include min-width('large') {
+      @include font(24px, 400, 32px);
+      margin-top: 40px;
+      padding: 12px 32px;
+    }
   }
 }

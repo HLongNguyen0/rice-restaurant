@@ -15,8 +15,12 @@ const refs = {
   premium: document.querySelector('.premium'),
   soup: document.querySelector('.soup'),
   salad: document.querySelector('.salad'),
+  header: document.querySelector('.header'),
+  heroOpen: document.querySelector('.hero__open'),
+  headerClose: document.querySelector('.header__close'),
 };
 
+// navigation
 refs.main.addEventListener('click', onMain);
 refs.menu.addEventListener('click', onMenu);
 refs.heroLink.addEventListener('click', onMenu);
@@ -40,6 +44,7 @@ function onNav(e) {
 
 refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'premium'));
 
+// menu
 refs.vok.addEventListener('click', onVok);
 refs.premium.addEventListener('click', onPremium);
 refs.soup.addEventListener('click', onSoup);
@@ -65,4 +70,13 @@ function onSalad(e) {
 function onFood(e) {
   e.preventDefault();
   refs.menuList.innerHTML = '';
+}
+
+// header modal
+refs.headerClose.addEventListener('click', toggle);
+refs.heroOpen.addEventListener('click', toggle);
+
+function toggle(e) {
+  e.preventDefault();
+  refs.header.classList.toggle('is-closed');
 }

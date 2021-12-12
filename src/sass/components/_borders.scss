@@ -1,0 +1,7 @@
+.borders {
+  border: 2px solid var(--white-color);
+  border-radius: 18px;
+  @include min-width('large') {
+    border-radius: 32px;
+  }
+}

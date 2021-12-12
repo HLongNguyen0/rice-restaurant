@@ -1,4 +1,5 @@
 // ultils
+@import './utils/breakpoints';
 @import './utils/_variables';
 @import './utils/mixin';
 @import './utils/visually-hidden';
@@ -8,13 +9,14 @@
 
 // components
 @import './components/container';
-@import './components/img-box';
+@import './components/borders';
+@import './components/card';
 
 // layout
 @import './layout/header';
 @import './layout/hero';
 @import './layout/special-offers';
 @import './layout/about-us';
-@import './layout/hero2';
-@import './layout/menu';
-@import './layout/footer';
+// @import './layout/hero2';
+// @import './layout/menu';
+// @import './layout/footer';

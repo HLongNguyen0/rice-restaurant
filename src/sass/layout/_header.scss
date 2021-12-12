@@ -1,43 +1,71 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 100%;
-  padding: 0 24px;
   border-left: 2px solid var(--white-color);
   border-right: 2px solid var(--white-color);
   background-color: var(--red-color);
   text-align: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 32px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+
+  @include min-width('large') {
+    top: 0;
+    left: 0;
+    width: 280px;
+  }
+  &.is-closed {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
   &__container {
+    position: relative;
     height: 100%;
-    padding: 64px 0;
     border-left: 2px solid var(--white-color);
     border-right: 2px solid var(--white-color);
+    @include min-width('small') {
+      padding: 64px 0;
+    }
+  }
+  &__close {
+    @include max-width('large') {
+      position: absolute;
+      top: 12px;
+      right: 24px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+    }
+    @include min-width('large') {
+      display: none;
+    }
   }
   &__nav {
-    margin-bottom: 320px;
+    @include font(32px, 400, 40px);
+    margin-bottom: 80px;
+    @include min-width('large') {
+      margin-bottom: 160px;
+    }
   }
   &__tel {
-    margin-bottom: 180px;
+    @include font(16px, 400, 24px);
+    margin-bottom: 80px;
+    @include min-width('large') {
+      @include font(24px, 400, 32px);
+      margin-bottom: 120px;
+    }
+  }
+  &__time {
+    @include font(16px, 400, 24px);
   }
 }
 #logo {
-  @include font(64px, 700, 72px);
-  display: block;
-  margin-bottom: 100px;
-}
-.nav {
-  &__elem {
-    @include font(24px, 400, 32px);
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-}
-.tel__elem {
-  @include font(24px, 400, 32px);
-}
-.time__elem {
-  @include font(16px, 400, 24px);
+  @include font(56px, 700, 64px);
+  margin-bottom: 120px;
 }
