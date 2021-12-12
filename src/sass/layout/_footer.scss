@@ -1,34 +1,86 @@
+// .footer {
+//   border: 2px solid var(--white-color);
+//   background-color: var(--dark-grey-color);
+//   &__container {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 1440px;
+//     margin: 0 auto;
+//     padding: 32px 48px 48px 320px;
+//   }
+//   &__title {
+//     @include font(24px, 400, 32px);
+//   }
+//   &__contacts {
+//     @include font(24px, 400, 32px);
+//     display: flex;
+//     font-style: normal;
+//     & span {
+//       display: block;
+//     }
+//   }
+// }
+// .contacts {
+//   &__key {
+//     margin-right: 16px;
+//     text-align: end;
+//     & span:last-child {
+//       margin-top: 48px;
+//     }
+//   }
+//   &__value span:last-child {
+//     margin-top: 16px;
+//   }
+// }
+
 .footer {
-  border: 2px solid var(--white-color);
   background-color: var(--dark-grey-color);
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    margin: 0 auto;
-    padding: 32px 48px 48px 320px;
+  .container {
+    @include min-width('large') {
+      display: flex;
+      padding-bottom: 40px;
+    }
   }
   &__title {
     @include font(24px, 400, 32px);
+    display: block;
+    margin-bottom: 8px;
+    @include min-width('large') {
+      @include font(32px, 400, 40px);
+    }
+  }
+  &__sm {
+    margin-bottom: 16px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 160px;
+    }
   }
   &__contacts {
-    @include font(24px, 400, 32px);
+    @include font(16px, 400, 24px);
     display: flex;
+    width: fit-content;
+    margin-left: auto;
     font-style: normal;
-    & span {
+    @include min-width('large') {
+      @include font(24px, 400, 32px);
+    }
+    span {
       display: block;
+    }
+    .contacts__key {
+      margin-right: 16px;
+      text-align: right;
+      & span:last-child {
+        margin-top: 24px;
+      }
     }
   }
 }
-.contacts {
-  &__key {
-    margin-right: 16px;
-    text-align: end;
-    & span:last-child {
-      margin-top: 48px;
-    }
-  }
-  &__value span:last-child {
-    margin-top: 16px;
+.sm {
+  &__icon {
+    width: 40px;
+    height: 40px;
   }
 }
