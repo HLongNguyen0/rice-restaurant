@@ -5,6 +5,7 @@
     justify-content: center;
   }
   &__elem {
+    @include shadow(0, 16px);
     width: 280px;
     padding: 8px;
     margin-bottom: 16px;

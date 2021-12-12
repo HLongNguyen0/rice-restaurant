@@ -61,19 +61,19 @@ refs.salad.addEventListener('click', onSalad);
 
 function onVok(e) {
   onFood(e);
-  refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'vok'));
+  refs.menuList.insertAdjacentHTML('beforeend', menuString('vok'));
 }
 function onPremium(e) {
   onFood(e);
-  refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'premium'));
+  refs.menuList.insertAdjacentHTML('beforeend', menuString('premium'));
 }
 function onSoup(e) {
   onFood(e);
-  refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'soup'));
+  refs.menuList.insertAdjacentHTML('beforeend', menuString('soup'));
 }
 function onSalad(e) {
   onFood(e);
-  refs.menuList.insertAdjacentHTML('beforeend', menuString(menuItems, 'salad'));
+  refs.menuList.insertAdjacentHTML('beforeend', menuString('salad'));
 }
 
 function onFood(e) {
